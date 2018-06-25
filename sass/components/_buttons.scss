@@ -1,0 +1,424 @@
+.country-battle {
+    margin-top: 45px;
+    position: relative;
+}
+
+.battle-announs {
+    background: linear-gradient(to right, rgba(76,76,76,0.2) 0%, rgba(44,44,44,0.2) 25%, rgba(17,17,17,0.2) 50%, rgba(102,102,102,0.1) 88%, rgba(117,117,117,0.1) 100%);
+    width: 200px;
+
+    span {
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #c1c1c1;
+        padding: 10px;
+    }
+}
+
+.country {
+    float: left;
+    position: relative;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+
+    .time-match {
+        color: white;
+        margin-top: 20px;
+        padding: 7px;
+        animation: moving 5s infinite;
+        z-index: 20;
+    }
+    @keyframes moving {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(85%);
+        }
+    }
+
+    .country-one {
+        padding: 15px 77px;
+        background-color: #d29141;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 260px;
+            top: -12px;
+            border-width: 29px 29px 29px 29px;
+            border-style: solid;
+            border-left-color: #d29141;
+            border-top-color: #d29141;
+            border-right-color: rgba(255, 255, 255, 0) !important;
+            border-bottom-color: rgba(255, 255, 255, 0) !important;
+        }
+    }
+
+    .country-two {
+        padding: 15px 77px;
+        margin-left: 86px;
+        background-color: #d29141;
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: 260px;
+            top: -12px;
+            border-width: 29px 29px 29px 29px;
+            border-style: solid;
+            border-left-color: rgba(255, 255, 255, 0) !important;
+            border-top-color: rgba(255, 255, 255, 0) !important;
+            border-right-color: #d29141;
+            border-bottom-color: #d29141;
+        }
+    }
+}
+
+.learn {
+    float: right;
+    display: inline-block;
+    padding-top: 20px;
+    cursor: pointer;
+
+    button {
+        background-color: #d29141;
+        padding: 10px;
+        color: #d8d5d5;
+        font-size: 1.5rem;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.banner-match {
+    margin-top: 10px;
+}
+
+.banner {
+    background-image: url("../images/world-cup.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 615px;
+    height: 400px;
+    position: relative;
+}
+
+.banner-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(28, 25, 25, 0.6);
+    z-index: 5;
+}
+
+.bettings {
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 10;
+    height: 87%;
+    padding: 10px;
+    margin-top: 25px;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    .vs-icon {
+        img {
+            width: 40px;
+        }
+    }
+
+    .choice {
+        text-transform: uppercase;
+        font-size: 2rem;
+        background-color: rgba(154,34,34,0.9);
+        color: #e3e3e3;
+        padding: 9px 12px;
+        display: inline-block;
+    }
+
+    .choice-boxes {
+        display: inline-block;
+
+        &.remove {
+            display: none;
+        }
+
+        form {
+            float: right;
+            margin-top: 10px;
+
+            input {
+                width: 54px;
+                height: 41px;
+                margin-left: 54px;
+                border: 3px rgb(154,34,34) solid;
+                background-color: rgba(208,208,208,0.9);
+            }
+
+            button:focus,
+            input:focus,
+            select:focus,
+            textarea:focus {
+                outline: none;
+            }
+        }
+
+        .choice-box-input {
+            width: 57px;
+            height: 30px;
+            background-color: #ddd;
+        }
+
+        .choice-box-input-right {
+            margin-right: 162px;
+            width: 57px;
+            height: 30px;
+            background-color: #ddd;
+
+            input {
+                width: 54px;
+                height: 41px;
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+.final-result {
+    &.remove {
+        display: none;
+    }
+
+    .bet-result {
+        outline: none;
+        font-size: 2.1rem;
+        color: white;
+        padding: 5px 14px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: rgba(154, 34, 34, 0.9);
+        border: 3px solid #7a0d0d;
+        padding: 19px;
+    }
+
+    .bet-result-second {
+        margin-left: 60px;
+        outline: none;
+        font-size: 2.1rem;
+        color: white;
+        padding: 5px 14px;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: rgba(154, 34, 34, 0.9);
+        border: 3px solid #7a0d0d;
+        padding: 19px;
+    }
+
+    span {
+        font-size: 5rem;
+        margin-left: 60px;
+        text-shadow: 2px 1px 2px #811818;
+    }
+
+    p {
+        padding: 5px 0 4px 66px;
+        font-size: 1.8rem;
+    }
+}
+
+.decision-form {
+    form {
+        padding-left: 65px;
+
+        label {
+            font-size: 1.8rem;
+        }
+
+        input[type=button] {
+            margin-left: 13px;
+            background-color: rgba(154, 34, 34, 0.9);
+            color: #e3e3e3;
+            border: 2px solid #7a0d0d;
+            width: 80px;
+            height: 35px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.price-info {
+    background-color: rgba(45,40,38, 0.5)!important;
+    display: inline-block;
+    position: absolute;
+    width: 214px;
+    font-size: 1.7rem;
+    top: 192px;
+    right: 212px;
+    position: absolute;
+    background: white;
+    padding: 5px 10px;
+
+    p {
+        background-color: rgba(255,255,255, 0.5);
+    }
+}
+
+.winner {
+    background-color: rgba(154, 34, 34, 0.9);
+    color: white;
+    transition: all 1s ease;
+    padding: 8px 43px;
+
+    &:hover {
+        background-color: #782713;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .banner {
+        width: 70%;
+    }
+
+    .input-group {
+        width: 109px;
+    }
+
+    .country {
+        .country-one {
+            padding: 15px 39px;
+
+            &::after {
+                left: 184px;
+            }
+        }
+
+        .country-two {
+            padding: 15px 53px;
+
+            &::after {
+                right: 212px;
+            }
+        }
+    }
+
+    .time {
+        margin-right: 0;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    footer {
+        width: 800px;
+        background-position: 10px 10px;
+    }
+
+    .top {
+        left: 148px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .footer-layer {
+        width: 65%;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .other {
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-header {
+        display: inline-block;
+    }
+
+    .nav-hamburger {
+        .hidd-ham {
+            display: inline-block;
+            padding: 4px 35px;
+            color: #9d9d9d;
+        }
+    }
+
+    .other {
+        display: none;
+    }
+
+    .banner {
+        margin: 0 auto;
+    }
+
+    .banner {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .time {
+        font-size: 2.3rem;
+    }
+
+    .banner {
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 534px) {
+    .country {
+        .country-one {
+            padding: 15px 12px;
+
+            &::after {
+                left: 130px;
+            }
+        }
+
+        .country-two {
+            padding: 15px 23px;
+
+            &::after {
+                left: 165px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 415px) {
+    .country {
+        .country-one {
+            padding: 15px 4px;
+
+            &::after {
+                left: 114px;
+            }
+        }
+
+        .country-two {
+            padding: 15px 6px;
+
+            &::after {
+                left: 150px;
+            }
+        }
+    }
+
+    .bettings .choice {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,91 @@
+footer {
+    background: url("../images/fifa-logo-2018.png");
+    background-position: 70px 10px;
+    background-repeat: no-repeat;
+    background-size: 117px 82px;
+    min-height: 100px;
+    margin-right: 20px;
+    color: #9d9d9d;
+    position: relative;
+}
+
+.footer-layer {
+    background-color: #222;
+    width: 70%;
+    height: 58px;
+    position: relative;
+    margin-top: 30px;
+    float: right;
+    min-height: 50px;
+
+    &::after {
+        position: absolute;
+        background-size: 10px 20px;
+        content: "";
+        left: -58px;
+        top: 0;
+        border-width: 29px 29px 29px 29px;
+        border-style: solid;
+        border-left-color: rgba(255, 255, 255, 0) !important;
+        border-top-color: rgba(255, 255, 255, 0) !important;
+        border-right-color: #222;
+        border-bottom-color: #222;
+    }
+
+    .items-footer {
+        padding-top: 2px;
+    }
+
+    .footer-list a {
+        color: #9d9d9d;
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.social {
+    margin-top: 10px;
+
+    a {
+        color: #9d9d9d;
+        font-size: 1.8rem;
+        padding-left: 20px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.top {
+    top: 34px;
+    left: 200px;
+    position: absolute;
+
+    a {
+        .fa-arrow-circle-up {
+            font-size: 3.9rem;
+            color: white;
+        }
+    }
+}
+
+.conclusion {
+    display: none;
+    font-size: 6.3rem;
+    position: absolute;
+    z-index: 200;
+    bottom: 72px;
+
+    span {
+        text-shadow: 2px 2px 4px #9a2222;
+    }
+
+    &.conclusion-sub {
+        display: block;
+    }
+}

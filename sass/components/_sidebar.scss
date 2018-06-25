@@ -1,0 +1,38 @@
+.other {
+    background-color: rgba(45,40,38, 0.5)!important;
+    display: inline-block;
+    position: absolute;
+    width: 214px;
+    font-size: 1.7rem;
+    top: 80px;
+    right: 43px;
+    position: absolute;
+    background: white;
+    padding: 5px 10px;
+    border-color: #d29141;
+
+    .list-group-item {
+        border-color: #d29141;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(154, 34, 34, 0.9);
+        color: #585252;
+
+        &.active {
+            color: #221f1f;
+            font-weight: 700;
+        }
+    }
+
+    .list-group-item.active,
+    .list-group-item.active:focus,
+    .list-group-item.active:hover {
+        background-color: #d29141;
+    }
+}
+
+.time {
+    float: right;
+    font-size: 2.8rem;
+    margin-right: 30px;
+    font-weight: 700;
+}

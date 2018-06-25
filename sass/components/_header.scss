@@ -1,0 +1,33 @@
+.input-group {
+    width: 155px;
+}
+
+.navbar-left {
+    float: right!important;
+    padding: 0;
+}
+
+.navbar-inverse .navbar-nav li a {
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #d29141;
+        color: #000;
+    }
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #d29141;
+    color: #000;
+}
+
+.navbar-brand {
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.nav-hamburger {
+    .hidd-ham {
+        display: none;
+    }
+}
